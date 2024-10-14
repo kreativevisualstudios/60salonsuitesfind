@@ -29,11 +29,19 @@
             padding-bottom: 10px; 
             text-align: center; 
             animation: fadeIn 1s;
-            font-size: 3.5em; /* Ajusta el tamaño aquí */
+            font-size: 3.5em; /* Tamaño por defecto */
             display: inline-block; /* Para que el borde se ajuste al tamaño del texto */
-            width: 30%; /* Ajusta el ancho */
-            margin-bottom: 0 auto; /* Espacio debajo del encabezado */
+            width: auto; /* Ajustar el ancho automáticamente */
+            max-width: 90%; /* Máximo ancho en dispositivos pequeños */
+            margin: 0 auto 0; /* Espacio debajo del encabezado */
         }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Tamaño más pequeño en pantallas pequeñas */
+                max-width: 100%; /* Ocupar todo el ancho disponible */
+            }
+}
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
