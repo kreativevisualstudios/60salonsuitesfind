@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>Find A Salon by 60 Salon Suites</title>
     <link href="https://fonts.googleapis.com/css2?family=Hallender&display=swap" rel="stylesheet">
     <style>
@@ -15,14 +19,20 @@
             flex-direction: column; 
             align-items: center; 
         }
+
         h1 { 
-            font-family: 'Hallender', sans-serif; 
-            font-style: italic; /* Letra en cursiva */
-            color: #63493e; 
-            border-bottom: 2px solid #63493e; 
+            font-family: "PT Serif", serif; 
+            font-weight: 400;
+            font-style: normal; /* Letra en cursiva */
+            color: #15161A; 
+            border-bottom: 3px solid #15161A; 
             padding-bottom: 10px; 
             text-align: center; 
             animation: fadeIn 1s;
+            font-size: 3.5em; /* Ajusta el tamaño aquí */
+            display: inline-block; /* Para que el borde se ajuste al tamaño del texto */
+            width: 30%; /* Ajusta el ancho */
+            margin-bottom: 0 auto; /* Espacio debajo del encabezado */
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -38,7 +48,7 @@
             margin: 5px; 
             padding: 15px; 
             width: 250px; 
-            border: 2px solid #ffc752; 
+            border: 2px solid #c9ac6a; 
             border-radius: 5px; 
             background-color: #efede6; 
             animation: grow 0.3s;
@@ -48,20 +58,19 @@
             to { transform: scale(1.02); }
         }
         .search-button { 
-            background-color: #ffc752; 
+            background-color: #c9ac6a; 
             color: white; 
             border: none; 
             padding: 15px 20px; 
             border-radius: 5px; 
             cursor: pointer; 
-            animation: bounce 0.3s infinite alternate;
         }
         @keyframes bounce {
             0% { transform: translateY(0); }
             100% { transform: translateY(-5px); }
         }
         .salon-box { 
-            background-color: #bfd3db; 
+            background-color: #c9ac6a; 
             margin: 50px; 
             padding: 20px; 
             border-radius: 8px; 
@@ -84,7 +93,7 @@
             height: 80px; /* Tamaño aumentado */
             border-radius: 50%; 
             overflow: hidden; 
-            border: 3px solid #63493e; 
+            border: 3px solid #15161A; 
             position: absolute; 
             top: -70px; 
             left: calc(50% - 40px); 
@@ -110,7 +119,7 @@
             margin-top: 10px; 
         }
         .social-button { 
-            background-color: #63493e; 
+            background-color: #c9ac6a; 
             color: white; 
             padding: 8px; 
             border-radius: 5px; 
@@ -132,11 +141,11 @@
         }
 
         p {
-    color: #63493e; /* Cambia este valor por el color deseado */
+    color: #15161A; /* Cambia este valor por el color deseado */
 }
 
 h5 {
-    color: #63493e; /* Cambia este valor por el color deseado */
+    color: #15161A; /* Cambia este valor por el color deseado */
 }
 
 .salon-container {
@@ -149,7 +158,7 @@ h5 {
 </head>
 <body>
 
- <h1></h1>
+ <h1>Find A Salon by 60 Salon Suites</h1>
 
     <div class="search-container">
         <input type="text" id="service" placeholder="By Service" class="form-control">
@@ -169,20 +178,20 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #3</p>
             <div class="specialty-services">
-                <p>Specialty Services: Manicures, Pedicures, Nail Enhancements, Nail Art, Nail Repair, Spa Treatments, Eyebrow Waxing, Facial Waxing and more.</p>
+                <p><b>Specialty Services:</b> Manicures, Pedicures, Nail Enhancements, Nail Art, Nail Repair, Spa Treatments, Eyebrow Waxing, Facial Waxing and more.</p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1 813 595 9185" onclick="showChatBubble('Teléfono: +1234567890')">
-                    <img src="phone white.png" alt="Teléfono">
+                    <img src="phone dark.png" alt="Teléfono">
                 </a>
                 <a class="social-button" href="https://www.facebook.com/profile.php?id=100090527902623" target="_blank">
-                    <img src="facebook white.png" alt="Facebook">
+                    <img src="facebook dark.png" alt="Facebook">
                 </a>
                 <a class="social-button" href="https://www.instagram.com/kash_nail_lounge/" target="_blank">
-                    <img src="instagram white.png" alt="Instagram">
+                    <img src="instagram dark.png" alt="Instagram">
                 </a>
                 <a class="social-button" href="mailto:60salonsuites@60salonsuites.com">
-                    <img src="mail white.png" alt="Correo">
+                    <img src="mail dark.png" alt="Correo">
                 </a>
             </div>
         </div>
@@ -198,20 +207,20 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #5</p>
             <div class="specialty-services">
-                <p>Specialty Services: Eyebrow, coloration and henna, lash lift, nanoblading, Hydra Gloss lips, tattoo removal, laser carbon peel, tissue repair and more.</p>
+                <p><b>Specialty Services:</b> Eyebrow, coloration and henna, lash lift, nanoblading, Hydra Gloss lips, tattoo removal, laser carbon peel, tissue repair and more.</p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1234567890" onclick="showChatBubble('Teléfono: +1234567890')">
-                    <img src="phone white.png" alt="Teléfono">
+                    <img src="phone dark.png" alt="Teléfono">
                 </a>
                 <a class="social-button" href="https://facebook.com" target="_blank">
-                    <img src="facebook white.png" alt="Facebook">
+                    <img src="facebook dark.png" alt="Facebook">
                 </a>
                 <a class="social-button" href="https://instagram.com" target="_blank">
-                    <img src="instagram white.png" alt="Instagram">
+                    <img src="instagram dark.png" alt="Instagram">
                 </a>
                 <a class="social-button" href="mailto:email@ejemplo.com">
-                    <img src="mail white.png" alt="Correo">
+                    <img src="mail dark.png" alt="Correo">
                 </a>
             </div>
         </div>
@@ -219,27 +228,27 @@ h5 {
         <!-- SUITE 1 -->
         <div class="salon-box">
             <div class="professional-photo">
-                <img src="no photo 60 salon suites.png" alt="Professional Photo">
+                <img src="no photo 60 salon suites black.png" alt="Professional Photo">
             </div>
             <h5 class="salon-name" onclick="window.location.href='salon-details.html';"> Suite 1</h5>
             <h5>Waiting for Name</h5>
             <p>Brandon, FL 33511</p>
             <p>Suite #5</p>
             <div class="specialty-services">
-                <p>Specialty Services: </p>
+                <p><b>Specialty Services:</b> </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1234567890" onclick="showChatBubble('Teléfono: +1234567890')">
-                    <img src="phone white.png" alt="Teléfono">
+                    <img src="phone dark.png" alt="Teléfono">
                 </a>
                 <a class="social-button" href="https://facebook.com" target="_blank">
-                    <img src="facebook white.png" alt="Facebook">
+                    <img src="facebook dark.png" alt="Facebook">
                 </a>
                 <a class="social-button" href="https://instagram.com" target="_blank">
-                    <img src="instagram white.png" alt="Instagram">
+                    <img src="instagram dark.png" alt="Instagram">
                 </a>
                 <a class="social-button" href="mailto:email@ejemplo.com">
-                    <img src="mail white.png" alt="Correo">
+                    <img src="mail dark.png" alt="Correo">
                 </a>
             </div>
         </div>
@@ -247,27 +256,27 @@ h5 {
         <!-- SUITE 2 -->
         <div class="salon-box">
             <div class="professional-photo">
-                <img src="no photo 60 salon suites.png" alt="Professional Photo">
+                <img src="no photo 60 salon suites black.png" alt="Professional Photo">
             </div>
             <h5 class="salon-name" onclick="window.location.href='salon-details.html';"> Suite 2</h5>
             <h5>Waiting for Name</h5>
             <p>Brandon, FL 33511</p>
             <p>Suite #2</p>
             <div class="specialty-services">
-                <p>Specialty Services: </p>
+                <p><b>Specialty Services:</b> </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1234567890" onclick="showChatBubble('Teléfono: +1234567890')">
-                    <img src="phone white.png" alt="Teléfono">
+                    <img src="phone dark.png" alt="Teléfono">
                 </a>
                 <a class="social-button" href="https://facebook.com" target="_blank">
-                    <img src="facebook white.png" alt="Facebook">
+                    <img src="facebook dark.png" alt="Facebook">
                 </a>
                 <a class="social-button" href="https://instagram.com" target="_blank">
-                    <img src="instagram white.png" alt="Instagram">
+                    <img src="instagram dark.png" alt="Instagram">
                 </a>
                 <a class="social-button" href="mailto:email@ejemplo.com">
-                    <img src="mail white.png" alt="Correo">
+                    <img src="mail dark.png" alt="Correo">
                 </a>
             </div>
         </div>
@@ -275,27 +284,27 @@ h5 {
         <!-- SUITE 4 -->
         <div class="salon-box">
             <div class="professional-photo">
-                <img src="no photo 60 salon suites.png" alt="Professional Photo">
+                <img src="no photo 60 salon suites black.png" alt="Professional Photo">
             </div>
             <h5 class="salon-name" onclick="window.location.href='salon-details.html';"> Suite 4</h5>
             <h5>Waiting for Name</h5>
             <p>Brandon, FL 33511</p>
             <p>Suite #4</p>
             <div class="specialty-services">
-                <p>Specialty Services: </p>
+                <p><b>Specialty Services:</b> </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1234567890" onclick="showChatBubble('Teléfono: +1234567890')">
-                    <img src="phone white.png" alt="Teléfono">
+                    <img src="phone dark.png" alt="Teléfono">
                 </a>
                 <a class="social-button" href="https://facebook.com" target="_blank">
-                    <img src="facebook white.png" alt="Facebook">
+                    <img src="facebook dark.png" alt="Facebook">
                 </a>
                 <a class="social-button" href="https://instagram.com" target="_blank">
-                    <img src="instagram white.png" alt="Instagram">
+                    <img src="instagram dark.png" alt="Instagram">
                 </a>
                 <a class="social-button" href="mailto:email@ejemplo.com">
-                    <img src="mail white.png" alt="Correo">
+                    <img src="mail dark.png" alt="Correo">
                 </a>
             </div>
         </div>
@@ -303,27 +312,27 @@ h5 {
         <!-- SUITE 6 -->
         <div class="salon-box">
             <div class="professional-photo">
-                <img src="no photo 60 salon suites.png" alt="Professional Photo">
+                <img src="no photo 60 salon suites black.png" alt="Professional Photo">
             </div>
             <h5 class="salon-name" onclick="window.location.href='salon-details.html';"> Suite 6</h5>
             <h5>Waiting for Name</h5>
             <p>Brandon, FL 33511</p>
             <p>Suite #6</p>
             <div class="specialty-services">
-                <p>Specialty Services: </p>
+                <p><b>Specialty Services:</b> </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1234567890" onclick="showChatBubble('Teléfono: +1234567890')">
-                    <img src="phone white.png" alt="Teléfono">
+                    <img src="phone dark.png" alt="Teléfono">
                 </a>
                 <a class="social-button" href="https://facebook.com" target="_blank">
-                    <img src="facebook white.png" alt="Facebook">
+                    <img src="facebook dark.png" alt="Facebook">
                 </a>
                 <a class="social-button" href="https://instagram.com" target="_blank">
-                    <img src="instagram white.png" alt="Instagram">
+                    <img src="instagram dark.png" alt="Instagram">
                 </a>
                 <a class="social-button" href="mailto:email@ejemplo.com">
-                    <img src="mail white.png" alt="Correo">
+                    <img src="mail dark.png" alt="Correo">
                 </a>
             </div>
         </div>
@@ -331,27 +340,27 @@ h5 {
          <!-- SUITE 7 -->
         <div class="salon-box">
             <div class="professional-photo">
-                <img src="no photo 60 salon suites.png" alt="Professional Photo">
+                <img src="no photo 60 salon suites black.png" alt="Professional Photo">
             </div>
             <h5 class="salon-name" onclick="window.location.href='salon-details.html';"> Suite 7</h5>
             <h5>Waiting for Name</h5>
             <p>Brandon, FL 33511</p>
             <p>Suite #7</p>
             <div class="specialty-services">
-                <p>Specialty Services: </p>
+                <p><b>Specialty Services:</b> </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1234567890" onclick="showChatBubble('Teléfono: +1234567890')">
-                    <img src="phone white.png" alt="Teléfono">
+                    <img src="phone dark.png" alt="Teléfono">
                 </a>
                 <a class="social-button" href="https://facebook.com" target="_blank">
-                    <img src="facebook white.png" alt="Facebook">
+                    <img src="facebook dark.png" alt="Facebook">
                 </a>
                 <a class="social-button" href="https://instagram.com" target="_blank">
-                    <img src="instagram white.png" alt="Instagram">
+                    <img src="instagram dark.png" alt="Instagram">
                 </a>
                 <a class="social-button" href="mailto:email@ejemplo.com">
-                    <img src="mail white.png" alt="Correo">
+                    <img src="mail dark.png" alt="Correo">
                 </a>
             </div>
         </div>
@@ -399,4 +408,3 @@ h5 {
 
 </body>
 </html>
-
