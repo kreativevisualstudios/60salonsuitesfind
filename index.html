@@ -27,28 +27,33 @@
             padding-bottom: 10px;
             text-align: center;
             animation: fadeIn 1s;
-            font-size: 5vw; /* Usar vw para que el tamaño sea relativo al ancho de la pantalla */
+            font-size: 3.5em;
             display: inline-block;
             margin-bottom: 0;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            line-height: 1.2; /* Ajuste para mayor legibilidad */
+        }
+        
+        h1::after {
+            content: "\A"; /* Representa un salto de línea */
+            white-space: pre; /* Asegura que el salto de línea se respete */
         }
         
         /* Ajuste para pantallas más pequeñas, como móviles */
         @media (max-width: 768px) {
             h1 {
-                font-size: 8vw; /* Ajuste para pantallas más pequeñas */
+                font-size: 2.5em;
             }
         }
         
         /* Ajuste para pantallas aún más pequeñas */
         @media (max-width: 480px) {
             h1 {
-                font-size: 10vw; /* Aumenta el tamaño proporcionalmente en móviles */
+                font-size: 2em;
             }
         }
+
         
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -176,7 +181,10 @@ h5 {
 </head>
 <body>
 
- <h1>Find A Salon by 60 Salon Suites</h1>
+ <h1>
+    Find A Salon <br>
+    by 60 Salon Suites
+</h1>
 
     <div class="search-container">
         <input type="text" id="service" placeholder="By Service" class="form-control">
